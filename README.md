@@ -17,4 +17,13 @@ to play as the underlying machine learning model.
 
 ## Model
 
+### RL Schema 1
 
+- Epoch: one vs multiple
+- Actions: Pass, Train, Test
+- Reward:
+  - Learning effort: - log( #learned-examples + 1 )
+  - Learning outcomes:
+    - Correct: +1
+    - Wrong: -1
+  - Bored: -0.1
